@@ -1,0 +1,61 @@
+[{
+  "_id": {
+    "$oid": "64064ec720a2e1f69aca7395"
+  },
+  "nombres": "Paola",
+  "apellidos": "Rivera",
+  "correo": "privera@hotmail.com",
+  "cargo": "desarrollador back",
+  "contrasenia": "$2a$05$kRgBLO2kP3ajumaU9kE5Teh4LFP52Bgq6A/SpndQ2LLqImA8CnWBC",
+  "grupo": "usuario",
+  "insertDate": "Mon Mar 06 2023 15:36:23 GMT-0500 (hora estándar de Colombia)",
+  "id": "64064ec720a2e1f69aca7395"
+},{
+  "_id": {
+    "$oid": "64064efb20a2e1f69aca7399"
+  },
+  "nombres": "eduardo",
+  "apellidos": "salamanca",
+  "correo": "eduardosalam@hotmail.com",
+  "cargo": "desarrollador back",
+  "contrasenia": "$2a$05$0VoaqFkg4eBALYJnyn3UW.yoQqp1v4c4/i4yrezhAqj/xg0LIQ7a2",
+  "grupo": "administrador",
+  "insertDate": "Mon Mar 06 2023 15:37:15 GMT-0500 (hora estándar de Colombia)",
+  "id": "64064efb20a2e1f69aca7399"
+},{
+  "_id": {
+    "$oid": "6408de804774ffde044d684a"
+  },
+  "nombres": "ricardo",
+  "apellidos": "prado",
+  "correo": "ricardo@gmail.com",
+  "cargo": "empleado externo",
+  "contrasenia": "$2a$05$geGgPr5YYZEpUvrZPzxJluhS9Axl8bzREf3wIXihz3mIy/RpoLXHe",
+  "grupo": "usuario",
+  "insertDate": "Wed Mar 08 2023 14:14:08 GMT-0500 (hora estándar de Colombia)",
+  "id": "6408de804774ffde044d684a"
+},{
+  "_id": {
+    "$oid": "6408e99237016021c2cbe144"
+  },
+  "nombres": "miguel",
+  "apellidos": "cifuentes",
+  "correo": "miguel@gmail.com",
+  "cargo": "empleado externo",
+  "contrasenia": "$2a$05$5itGo96/J0H4gSNndLT9Cess28Wxyp3O0lv2TLv.1bVviCYrQcmnC",
+  "grupo": "usuario",
+  "insertDate": "Wed Mar 08 2023 15:01:22 GMT-0500 (hora estándar de Colombia)",
+  "id": "6408e99237016021c2cbe144"
+},{
+  "_id": {
+    "$oid": "6408ee9566bb4b4970b902e9"
+  },
+  "nombres": "monica",
+  "apellidos": "lopez",
+  "correo": "monica@hotmail.com",
+  "cargo": "empleado",
+  "contrasenia": "$2a$05$oym9urtJjXosXadW//WXG.X4ln1u19Z3yx2xtq/f6.UdPURlJ3Bm2",
+  "grupo": "usuario",
+  "insertDate": "Wed Mar 08 2023 15:22:45 GMT-0500 (hora estándar de Colombia)",
+  "id": "6408ee9566bb4b4970b902e9"
+}]

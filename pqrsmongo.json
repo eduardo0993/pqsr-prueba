@@ -1,0 +1,106 @@
+[{
+  "_id": {
+    "$oid": "64074f74734ea6f3cb27b672"
+  },
+  "tipo": "queja",
+  "descripcion": "pasar a dessarollador backend",
+  "estado": "pendiente",
+  "fecha_registro": {
+    "$date": {
+      "$numberLong": "1678200692119"
+    }
+  },
+  "autor": "64064efb20a2e1f69aca7399",
+  "area": "talento humano",
+  "funcionario": "juanito torres"
+},{
+  "_id": {
+    "$oid": "6407516f734ea6f3cb27b674"
+  },
+  "tipo": "peticion",
+  "descripcion": "certificado de trabajo durante proceso icfes",
+  "estado": "pendiente",
+  "fecha_registro": {
+    "$date": {
+      "$numberLong": "1678201199737"
+    }
+  },
+  "autor": "64064ec720a2e1f69aca7395",
+  "area": "talento humano",
+  "funcionario": "pepito perez"
+},{
+  "_id": {
+    "$oid": "6408dd624774ffde044d6846"
+  },
+  "tipo": "solicitud",
+  "descripcion": "cambio de area a innovacion",
+  "estado": "pendiente",
+  "fecha_registro": {
+    "$date": {
+      "$numberLong": "1678302562273"
+    }
+  },
+  "autor": "64064efb20a2e1f69aca7399",
+  "area": "talento humano",
+  "funcionario": "pepito perez"
+},{
+  "_id": {
+    "$oid": "6408e07f4774ffde044d6851"
+  },
+  "tipo": "solicitud",
+  "descripcion": "registro de documentos",
+  "estado": "resuelto",
+  "fecha_registro": {
+    "$date": {
+      "$numberLong": "1678303359008"
+    }
+  },
+  "autor": "64064efb20a2e1f69aca7399",
+  "area": "talento humano",
+  "funcionario": "pepito perez"
+},{
+  "_id": {
+    "$oid": "6408e9da37016021c2cbe148"
+  },
+  "tipo": "otro",
+  "descripcion": "no de recibos salud",
+  "estado": "pendiente",
+  "fecha_registro": {
+    "$date": {
+      "$numberLong": "1678305754120"
+    }
+  },
+  "autor": "64064efb20a2e1f69aca7399",
+  "area": "contabilidad",
+  "funcionario": "pepito perez"
+},{
+  "_id": {
+    "$oid": "6408ee5766bb4b4970b902e7"
+  },
+  "tipo": "otro",
+  "descripcion": "pruebas del servicio",
+  "estado": "pendiente",
+  "fecha_registro": {
+    "$date": {
+      "$numberLong": "1678306903906"
+    }
+  },
+  "autor": "64064efb20a2e1f69aca7399",
+  "area": "contratacion",
+  "funcionario": "juanito perez"
+},{
+  "_id": {
+    "$oid": "6408f63ebd84d29a11572caa"
+  },
+  "tipo": "queja",
+  "descripcion": "otras pruebas",
+  "estado": "pendiente",
+  "fecha_registro": {
+    "$date": {
+      "$numberLong": "1678308926252"
+    }
+  },
+  "autor": "64064efb20a2e1f69aca7399",
+  "area": "desarrollo",
+  "funcionario": "julian lopez"
+}]
