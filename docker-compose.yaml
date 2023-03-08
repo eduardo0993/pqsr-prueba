@@ -1,0 +1,36 @@
+version: '3'
+
+services: 
+  backend:
+    container_name: pqrs_back
+    restart: always
+    build: ./pqrs
+    links:
+      - mongodb
+    ports:
+      - 3300:3300
+    networks:
+      - network-backend
+
+  mongodb:
+    container_name: mongo_database
+    image: mongo
+    expose:
+      - 27017
+    volumes:
+      - mongodb_data:/data/db
+    environment:
+      ME_CONFIG_BASICAUTH_USERNAME: root
+      ME_CONFIG_BASICAUTH_PASSWORD: root
+      ME_CONFIG_MONGODB_PORT: 27017
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: root
+    networks:
+      - network-backend
+
+networks:
+  network-backend:
+    driver: bridge
+volumes:
+  mongodb_data:
+    external: true
