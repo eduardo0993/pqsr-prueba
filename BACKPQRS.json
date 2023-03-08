@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "03e71afa-e875-4c0e-b09b-62377962a176",
+		"name": "BACKPQRS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25669951"
+	},
+	"item": [
+		{
+			"name": "insertarpqrs",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n\"tipo\":\"queja\",\r\n\"descripcion\":\"otras pruebas\",\r\n\"estado\": \"pendiente\",\r\n\"usuario_id\":\"64064efb20a2e1f69aca7399\",\r\n\"area\":\"desarrollo\",\r\n\"funcionario\":\"julian lopez\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3300/api/nuevapqrs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"api",
+						"nuevapqrs"
+					]
+				},
+				"description": "En este servicio se registran las pqrs con los campos requeridos en la prueba, la base de datos previamente debe tener usuarios registrados."
+			},
+			"response": []
+		},
+		{
+			"name": "registro de usuarios",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"nombres\":\"monica\",\r\n    \"apellidos\":\"lopez\",\r\n    \"correo\":\"monica@hotmail.com\",\r\n    \"cargo\":\"empleado\",\r\n    \"grupo\":\"usuario\"\r\n  \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3300/api/registroUsuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"api",
+						"registroUsuarios"
+					]
+				},
+				"description": "En este servicio se registran los usuarios con los requerimientos solicitados"
+			},
+			"response": []
+		},
+		{
+			"name": "loginpqrs",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"correo\": \"monica@hotmail.com\",\r\n    \"contrasenia\": \"GrupoASD123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3300/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"api",
+						"login"
+					]
+				},
+				"description": "En este servicio el usuario puede realizar su login por medio de token y encriptación los cuales son requeridos por seguridad\n\nEndFragment"
+			},
+			"response": []
+		},
+		{
+			"name": "pqrsUsuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"usuario_id\":\"64064efb20a2e1f69aca7399\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3300/api/pqrsUsuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"api",
+						"pqrsUsuarios"
+					]
+				},
+				"description": "En este servicio se puede consultar todas las pqrs que ha solicitado un usuario, (**SE DEBE PONER EL ID DEL USUARIO PARA QUE EL SISTEMA REALICE LA BUSQUEDA**)"
+			},
+			"response": []
+		},
+		{
+			"name": "todaspqrs",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"usuario_id\":\"64064ec720a2e1f69aca7395\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3300/api/obtenerpqrs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"api",
+						"obtenerpqrs"
+					]
+				},
+				"description": "StartFragment\n\nEn este servicio se puede consultar todas las pqrs registradas en el sistema solamente para el usuario administrador, (**SE DEBE PONER EL ID DEL USUARIO ADMINISTRADOR PARA QUE EL SISTEMA REALICE LA BUSQUEDA**)\n\n_**NOTA (registrar un usuario y en el campo grupo asignar administrador**__)_\n\nStartFragmentEndFragment<img src=\"https://content.pstmn.io/4b5d8292-f8d5-4412-adee-096c7d26aa28/dGVybWluYWRvLlBORw==\" alt=\"\">"
+			},
+			"response": []
+		},
+		{
+			"name": "filtrarpqrstipo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipo\":\"otro\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3300/api/filtrarpqrstipo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"api",
+						"filtrarpqrstipo"
+					]
+				},
+				"description": "En este servicio se filtra por el tipo de pqrs que se registro en la aplicacion."
+			},
+			"response": []
+		},
+		{
+			"name": "filtrarpqrsarea",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"area\":\"contabilidad\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3300/api/filtrarpqrsarea",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"api",
+						"filtrarpqrsarea"
+					]
+				},
+				"description": "StartFragment\n\nEn este servicio se filtra por el area a la se le interpuso una pqrs que se registro en la aplicacion.\n\nEndFragment"
+			},
+			"response": []
+		},
+		{
+			"name": "cambio de estado pqrs",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\":\"6408e07f4774ffde044d6851\",\r\n    \"estado\":\"resuelto\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3300/api/estadorpqrs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"api",
+						"estadorpqrs"
+					]
+				},
+				"description": "En este servicio se realiza el cambio de estado de las pqrs, los estados son parametrizables, en este servicio las pqrs se registran con un estado **(pendiente)** y al realizar el cambio del estado de la pqrs se puede parametrizar sin ninguna restricción.**( ejemplo estado: resuelto ) .**\n\nSe debe ingresar el ID de la pqsr y cambiar el estado, posteriormente verifique su cambio en la base de datos, para esta prueba se utilizó **(Mongobd).**"
+			},
+			"response": []
+		}
+	]
+}
